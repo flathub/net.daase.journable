@@ -32,7 +32,7 @@
                     "type" : "git",
                     "url": "https://gitlab.gnome.org/BjoernDaase/journable.git",
                     "tag": "0.1.1",
-                    "commit": "124da715788ef2b61a5cb6e79118fc5e97d37db3"
+                    "commit": "9d200b3b54866e80e817494f2bdc4b7c3193e6fd"
                 }
             ]
         }
