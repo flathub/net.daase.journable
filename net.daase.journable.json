@@ -33,6 +33,10 @@
                     "url": "https://gitlab.gnome.org/BjoernDaase/journable.git",
                     "tag": "0.1.1",
                     "commit": "9d200b3b54866e80e817494f2bdc4b7c3193e6fd"
+                },
+                {
+                    "type" : "patch",
+                    "path": "appdata.patch"
                 }
             ]
         }

@@ -1,0 +1,27 @@
+From 2803dfed15c0f1de2381923bb8bc58dbf466beaa Mon Sep 17 00:00:00 2001
+From: bbhtt <62639087+bbhtt@users.noreply.github.com>
+Date: Mon, 1 Aug 2022 22:48:50 +0530
+Subject: [PATCH] Fix appdata
+
+---
+ data/net.daase.journable.appdata.xml.in | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/data/net.daase.journable.appdata.xml.in b/data/net.daase.journable.appdata.xml.in
+index 95673ca..1b444d1 100644
+--- a/data/net.daase.journable.appdata.xml.in
++++ b/data/net.daase.journable.appdata.xml.in
+@@ -1,9 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <component type="desktop">
+-	<id>net.daase.journable</id>
++    <id>net.daase.journable</id>
+   <name>Journable</name>
+-	<metadata_license>CC0-1.0</metadata_license>
+-	<project_license>GPL-3.0-or-later</project_license>
+   <developer_name>Björn Daase</developer_name>
+   <summary>A simple bullet journal</summary>
+   <metadata_license>CC0-1.0</metadata_license>
+-- 
+2.37.1
+
