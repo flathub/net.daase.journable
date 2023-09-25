@@ -1,7 +1,7 @@
 {
     "app-id" : "net.daase.journable",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "42",
+    "runtime-version" : "45",
     "sdk" : "org.gnome.Sdk",
     "command" : "journable",
     "finish-args" : [
@@ -23,6 +23,21 @@
         "*.a"
     ],
     "modules" : [
+        {
+            "name" : "gtksourceview4",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dinstall_tests=false",
+                "-Dgtk_doc=false"
+            ],
+            "sources" : [
+                {
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gtksourceview/4.8/gtksourceview-4.8.4.tar.xz",
+                    "sha256": "7ec9d18fb283d1f84a3a3eff3b7a72b09a10c9c006597b3fbabbb5958420a87d"
+                }
+            ]
+        },
         {
             "name" : "journable",
             "builddir" : true,
