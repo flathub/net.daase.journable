@@ -1,7 +1,7 @@
 {
     "app-id" : "net.daase.journable",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "45",
+    "runtime-version" : "49",
     "sdk" : "org.gnome.Sdk",
     "command" : "journable",
     "finish-args" : [
@@ -19,6 +19,8 @@
         "/share/gtk-doc",
         "/share/man",
         "/share/pkgconfig",
+        "/share/vala",
+        "/share/gir-1.0",
         "*.la",
         "*.a"
     ],
@@ -51,7 +53,7 @@
                 },
                 {
                     "type" : "patch",
-                    "path": "appdata.patch"
+                    "path": "fix-appdata.patch"
                 }
             ]
         }

@@ -1,0 +1,87 @@
+From e029cb7ec1ea5a958859afeaa18e3cab82bd92b5 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 15 Jan 2026 20:16:28 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ data/net.daase.journable.appdata.xml.in | 37 ++++---------------------------------
+ data/net.daase.journable.desktop.in     |  2 +-
+ 2 files changed, 5 insertions(+), 34 deletions(-)
+
+diff --git a/data/net.daase.journable.appdata.xml.in b/data/net.daase.journable.appdata.xml.in
+index 95673ca..b477540 100644
+--- a/data/net.daase.journable.appdata.xml.in
++++ b/data/net.daase.journable.appdata.xml.in
+@@ -1,13 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<component type="desktop">
++<component type="desktop-application">
+ 	<id>net.daase.journable</id>
+   <name>Journable</name>
+ 	<metadata_license>CC0-1.0</metadata_license>
+ 	<project_license>GPL-3.0-or-later</project_license>
+-  <developer_name>Björn Daase</developer_name>
++	<developer id="net.daase"><name>Björn Daase</name></developer>
+   <summary>A simple bullet journal</summary>
+-  <metadata_license>CC0-1.0</metadata_license>
+-  <project_license>GPL-3.0+</project_license>
+   <description>
+       <p>📔 A simple bullet journal: Your digital notebook</p>
+   </description>
+@@ -19,6 +17,7 @@
+   </screenshots>
+   <url type="homepage">https://gitlab.gnome.org/BjoernDaase/journable</url>
+   <url type="bugtracker">https://gitlab.gnome.org/BjoernDaase/journable/issues</url>
++  <url type="vcs-browser">https://gitlab.gnome.org/BjoernDaase/journable</url>
+   <update_contact>bjoern@daase.net</update_contact>
+   <releases>
+       <release version="0.1.1" date="2020-04-06">
+@@ -39,33 +38,5 @@
+           </description>
+       </release>
+   </releases>
+-  <content_rating type="oars-1.1">
+-    <content_attribute id="violence-cartoon">none</content_attribute>
+-    <content_attribute id="violence-fantasy">none</content_attribute>
+-    <content_attribute id="violence-realistic">none</content_attribute>
+-    <content_attribute id="violence-bloodshed">none</content_attribute>
+-    <content_attribute id="violence-sexual">none</content_attribute>
+-    <content_attribute id="violence-desecration">none</content_attribute>
+-    <content_attribute id="violence-slavery">none</content_attribute>
+-    <content_attribute id="violence-worship">none</content_attribute>
+-    <content_attribute id="drugs-alcohol">none</content_attribute>
+-    <content_attribute id="drugs-narcotics">none</content_attribute>
+-    <content_attribute id="drugs-tobacco">none</content_attribute>
+-    <content_attribute id="sex-nudity">none</content_attribute>
+-    <content_attribute id="sex-themes">none</content_attribute>
+-    <content_attribute id="sex-homosexuality">none</content_attribute>
+-    <content_attribute id="sex-prostitution">none</content_attribute>
+-    <content_attribute id="sex-adultery">none</content_attribute>
+-    <content_attribute id="sex-appearance">none</content_attribute>
+-    <content_attribute id="language-profanity">none</content_attribute>
+-    <content_attribute id="language-humor">none</content_attribute>
+-    <content_attribute id="language-discrimination">none</content_attribute>
+-    <content_attribute id="social-chat">none</content_attribute>
+-    <content_attribute id="social-info">none</content_attribute>
+-    <content_attribute id="social-audio">none</content_attribute>
+-    <content_attribute id="social-location">none</content_attribute>
+-    <content_attribute id="social-contacts">none</content_attribute>
+-    <content_attribute id="money-purchasing">none</content_attribute>
+-    <content_attribute id="money-gambling">none</content_attribute>
+-  </content_rating>
++  <content_rating type="oars-1.1"/>
+ </component>
+diff --git a/data/net.daase.journable.desktop.in b/data/net.daase.journable.desktop.in
+index 6c77802..83bf4b2 100644
+--- a/data/net.daase.journable.desktop.in
++++ b/data/net.daase.journable.desktop.in
+@@ -4,5 +4,5 @@ Exec=journable
+ Icon=net.daase.journable
+ Terminal=false
+ Type=Application
+-Categories=GTK;
++Categories=GTK;Office;Utility;
+ StartupNotify=true
+--
+libgit2 1.7.2
+
